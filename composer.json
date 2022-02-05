@@ -1,0 +1,26 @@
+{
+  "name": "jurager/commerce",
+  "type": "library",
+  "homepage": "https://github.com/jurager/commerce",
+  "description": "Library for parsing CommerceML files",
+  "keywords": [
+    "commerceml",
+    "1c"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Yuri Gerassimov",
+      "email": "jurager01@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Jurager\\Commerce\\": "src/"
+    }
+  },
+  "require": {
+    "ext-simplexml": "*",
+    "php": "^8.0"
+  }
+}
