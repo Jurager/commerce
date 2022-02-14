@@ -18,7 +18,7 @@ abstract class Model extends ArrayObject
     /**
      * @var null|SimpleXMLElement
      */
-    public ?SimpleXMLElement $xml;
+    public ?SimpleXMLElement $xml = null;
 
     /**
      * @return array

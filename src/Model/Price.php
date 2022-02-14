@@ -4,11 +4,11 @@ namespace Jurager\Commerce\Model;
 
 class Price extends Simple
 {
-    protected $type;
+    protected $type = null;
 
     public function __get($name)
     {
-        if (($result = parent::__get($name)) && count($this->type) !== 0 && ($value = $this->type->{$name})) {
+        if (($result = parent::__get($name)) && $this->type && ($value = $this->type->{$name})) {
             return $value;
         }
         return $result;
@@ -28,7 +28,7 @@ class Price extends Simple
 
     public function getType()
     {
-        if (count($this->type) === 0 && ($id = $this->id) && $type = $this->owner->offerPackage->xpath('//c:ТипЦены[c:Ид = :id]', ['id' => $id])) {
+        if (!$this->type && ($id = $this->id) && $type = $this->owner->offerPackage->xpath('//c:ТипЦены[c:Ид = :id]', ['id' => $id])) {
             $this->type = new Simple($this->owner, $type[0]);
         }
 

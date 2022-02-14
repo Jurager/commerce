@@ -32,7 +32,7 @@ class Group extends Simple
      */
     public function getParent()
     {
-        if (count($this->parent) === 0) {
+        if (!$this->parent || count($this->parent) === 0) {
             $parent = $this->xpath('../..')[0];
             if ($parent->getName() === 'Группа') {
                 $this->parent = new Group($this->owner, $parent);
