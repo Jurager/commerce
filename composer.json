@@ -1,12 +1,7 @@
 {
   "name": "jurager/commerce",
-  "type": "library",
-  "homepage": "https://github.com/jurager/commerce",
   "description": "Library for parsing CommerceML files",
-  "keywords": [
-    "commerceml",
-    "1c"
-  ],
+  "keywords": ["commerceml", "1c"],
   "license": "MIT",
   "authors": [
     {
@@ -14,13 +9,13 @@
       "email": "jurager01@gmail.com"
     }
   ],
+  "require": {
+    "php": "^8.0",
+    "ext-simplexml": "*"
+  },
   "autoload": {
     "psr-4": {
       "Jurager\\Commerce\\": "src/"
     }
-  },
-  "require": {
-    "ext-simplexml": "*",
-    "php": "^8.0"
   }
 }
