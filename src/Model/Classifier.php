@@ -20,9 +20,9 @@ class Classifier extends Simple
      */
     protected array $priceTypes = [];
     /**
-     * @var PropertyCollection
+     * @var ?PropertyCollection
      */
-    protected PropertyCollection $properties;
+    protected ?PropertyCollection $properties;
 
     /**
      * @return SimpleXMLElement|null
