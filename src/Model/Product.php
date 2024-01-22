@@ -80,7 +80,7 @@ class Product extends Simple
     {
         if (! $this->group) {
 
-            if (count($this->Группы) === 0) {
+            if (!$this->Группы || count($this->Группы) === 0) {
                 return null;
             }
 
