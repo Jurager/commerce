@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Jurager\Commerce\Collections;
-
 
 use Jurager\Commerce\Model\Image;
 use Jurager\Commerce\Model\Simple;
