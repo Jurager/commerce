@@ -86,7 +86,7 @@ class Classifier extends Simple
      */
     public function getProperties(): PropertyCollection
     {
-        if (empty($this->properties) === 0) {
+        if (empty($this->properties)) {
             $this->properties = new PropertyCollection($this->owner, $this->xml->Свойства);
         }
         return $this->properties;
