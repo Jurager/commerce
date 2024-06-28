@@ -22,7 +22,7 @@ class Classifier extends Simple
     /**
      * @var ?PropertyCollection
      */
-    protected ?PropertyCollection $properties;
+    protected ?PropertyCollection $properties = null;
 
     /**
      * @return SimpleXMLElement|null
