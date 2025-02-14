@@ -76,7 +76,7 @@ class Commerce
     {
         $this->offersXml = $this->loadXml($file);
         $this->offerPackage = new OfferPackage($this);
-        $this->classifier = new Classifier($this);      ////
+        $this->classifier = new Classifier($this);
     }
 
     /**
