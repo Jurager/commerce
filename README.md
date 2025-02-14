@@ -1,7 +1,7 @@
 # Jurager/Commerce
 [![Latest Stable Version](https://poser.pugx.org/jurager/commerce/v/stable)](https://packagist.org/packages/jurager/commerce)
 [![Total Downloads](https://poser.pugx.org/jurager/commerce/downloads)](https://packagist.org/packages/jurager/commerce)
-[![PHP Version Require](http://poser.pugx.org/jurager/commerce/require/php)](https://packagist.org/packages/jurager/commerce)
+[![PHP Version Require](https://poser.pugx.org/jurager/commerce/require/php)](https://packagist.org/packages/jurager/commerce)
 [![License](https://poser.pugx.org/jurager/commerce/license)](https://packagist.org/packages/jurager/commerce)
 
 Библиотека для универсального разбора [CommerceML2](http://v8.1c.ru/edi/edi_stnd/90/92.htm) файлов.
